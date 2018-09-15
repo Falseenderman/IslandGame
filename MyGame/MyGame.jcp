@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+	<settings>
+		<label>MyGame</label>
+		<root_path>\</root_path>
+		<output_path>\</output_path>
+		<source_path>\</source_path>
+		<jdkprofile_ref/>
+		<compiler_ref/>
+		<ant_ref/>
+	</settings>
+	<ant_events/>
+	<run_items/>
+	<runtimes>
+		<runtime>
+			<label>&lt;Default&gt;</label>
+			<application_ref/>
+			<applet_ref/>
+			<debugger_ref/>
+			<param/>
+			<run>menu</run>
+			<verify>true</verify>
+		</runtime>
+	</runtimes>
+	<libraries/>
+	<files>
+		<include>
+			<fileitem>
+				<path>clear.java</path>
+			</fileitem>
+			<fileitem>
+				<path>construction.java</path>
+			</fileitem>
+			<fileitem>
+				<path>game.java</path>
+			</fileitem>
+			<fileitem>
+				<path>menu.java</path>
+			</fileitem>
+			<fileitem>
+				<path>nightTime.java</path>
+			</fileitem>
+			<fileitem>
+				<path>resource.java</path>
+			</fileitem>
+		</include>
+	</files>
+	<tasks/>
+</project>
