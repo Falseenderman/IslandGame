@@ -15,31 +15,32 @@ public class game
 
 
 
-		int response;
+		String response;
 		Scanner input = new Scanner(System.in);
 
 		//ask user
 		System.out.println("");
 		System.out.println("Day " + day + ".");
 		System.out.println("What do you want to do?");
-		System.out.println("1. Search for food/resources.");
-		System.out.println("2. Rest.");
-		System.out.println("3. Build something.");
-		System.out.println("4. Display stats.");
-		System.out.println("5. Quit.");
+		System.out.println("Search for food/resources.");
+		System.out.println("Rest.");
+		System.out.println("Build something.");
+		System.out.println("Display stats.");
+		System.out.println("Quit.");
+		System.out.println("");
 
-		response = input.nextInt();
+		response = input.nextLine();
 		System.out.println("");
 
 		//action
 		// finish 3
 
-		if (response == 1){
+		if (response.equalsIgnoreCase("search")){
 			clear.cls();
 			resource.Gather();
 			nightTime.Night();
 		}
-		else if (response == 2){
+		else if (response.equalsIgnoreCase("rest")){
 			clear.cls();
 			if (health <= 90){
 				System.out.println("You gained 10 health.");
@@ -55,12 +56,12 @@ public class game
 			}
 			nightTime.Night();
 		}
-		else if (response == 3){
+		else if (response.equalsIgnoreCase("build")){
 			clear.cls();
 			construction.Build();
 			nightTime.Night();
 		}
-		else if (response == 4){
+		else if (response.equalsIgnoreCase("display")){
 			clear.cls();
 			System.out.println("Health: " + health);
 			System.out.println("Food: " + food);
@@ -69,7 +70,7 @@ public class game
 			System.out.println("Skill: " + skill);
 			game.Games();
 		}
-		else if (response == 5){
+		else if (response.equalsIgnoreCase("quit")){
 			System.out.println("Good bye");
 		}
 		else{

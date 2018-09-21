@@ -31,10 +31,10 @@ public class nightTime
 				System.out.println("You survived " + game.day + " days.");
 				System.out.println("");
 				System.out.println("Play again?");
-				System.out.println("1. Yes");
-				menu.response = scan.nextInt();
+				System.out.println("Yes");
+				menu.response = scan.nextLine();
 
-				if (menu.response == 1){
+				if (menu.response.equalsIgnoreCase("yes")){
 					game.health = 100;
 					game.food = 10;
 					game.stone = 0;
